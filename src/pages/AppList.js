@@ -1,10 +1,10 @@
-import Pair from "../components/Pair";
+import "./AppList.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./AppList.css";
+import DropDown from "../components/DropDown";
 import Footer from "../components/Footer";
 
-const Convert = () => {
+function AppList() {
   const [data, setData] = useState(false);
 
   useEffect(() => {
@@ -20,10 +20,10 @@ const Convert = () => {
   return (
     <>
       <div className="cuerpo">
-        <Pair data={data} />
+        <DropDown data={data} />
       </div>
     </>
   );
-};
+}
 
-export default Convert;
+export default AppList;

@@ -3,9 +3,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="navbar">
-      <h1>Currency Converter</h1>
-      <hr />
+    <div className="general">
       <Navbar />
     </div>
   );

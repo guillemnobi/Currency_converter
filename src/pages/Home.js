@@ -1,8 +1,12 @@
+import Footer from "../components/Footer";
+
 const Home = () => {
   return (
-    <div>
-      <h2>This is Home</h2>
-    </div>
+    <>
+      <div className="cuerpo">
+        <h3>This is Home</h3>
+      </div>
+    </>
   );
 };
 

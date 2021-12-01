@@ -1,0 +1,141 @@
+/* ------------- general ------------- */
+
+.general {
+  /* background-color: whitesmoke; */
+  background: url(../components/images/background.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  color: green;
+  font-size: 25px;
+}
+
+.cuerpo {
+  min-height: 450px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  font-size: 15px;
+}
+
+.exchange {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.exchange p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+table {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+}
+.tableList:hover {
+  background-color: grey;
+}
+
+/* ------------- droplist ------------- */
+
+select {
+  margin-bottom: 16px;
+}
+
+/* ------------- table ------------- */
+
+td {
+  padding: 0 10px;
+}
+
+.tableHeader {
+  color: rgb(163, 219, 236);
+  font-weight: bold;
+}
+
+/* ------------- after table ------------- */
+
+#date {
+  font-size: 13px;
+}
+
+/* ------------- conversion ------------- */
+
+.convert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card2 {
+  background-color: cadetblue;
+  font-weight: bold;
+}
+
+.pair {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px black solid;
+}
+
+.element {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini {
+  font-size: 10px;
+  text-align: right;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 100px; /* Height of the footer */
+  background: rgb(22, 2, 109);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  align-items: center;
+}
+
+footer a {
+  color: #0e76a8;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 1vh;
+}
+
+footer p {
+  color: white;
+}
