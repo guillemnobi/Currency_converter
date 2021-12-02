@@ -18,7 +18,11 @@ const List = ({ currency }) => {
 
   return (
     <>
-      <table>
+      <table
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <thead>
           <tr className="tableHeader">
             <td>CURRENCY</td>

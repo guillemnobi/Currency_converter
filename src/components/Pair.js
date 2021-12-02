@@ -36,7 +36,7 @@ const Pair = ({ data }) => {
   // console.log(Object.values(Object.values(list)[3]));
 
   return (
-    <div className="convert">
+    <div data-aos="fade-right" data-aos-duration="3000">
       <div className="card1">
         <h3>Select a pair</h3>
         <div className="pair">

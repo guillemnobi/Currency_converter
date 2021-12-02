@@ -8,11 +8,6 @@
   background-repeat: no-repeat;
 }
 
-h2 {
-  color: green;
-  font-size: 25px;
-}
-
 .cuerpo {
   min-height: 500px;
 }
@@ -22,6 +17,13 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.nav h2 {
+  color: rgba(64, 226, 191, 0.986);
+  margin-top: 3vh;
+  text-transform: uppercase;
+  font-size: 27px;
 }
 
 a {
@@ -42,10 +44,12 @@ a {
 }
 
 table {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   font-size: 16px;
-  padding: 10px 0;
+  padding: 20px;
+  min-width: 300px;
+  border-radius: 2%;
 }
 .tableList:hover {
   background-color: grey;
@@ -72,6 +76,7 @@ td {
 
 #date {
   font-size: 13px;
+  color: white;
 }
 
 /* ------------- conversion ------------- */
@@ -98,7 +103,10 @@ td {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px black solid;
+  border: 3px solid #333333;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
 }
 
 .element {
