@@ -1,5 +1,9 @@
 /* ------------- general ------------- */
 
+h3 {
+  font-weight: 500;
+}
+
 .general {
   /* background-color: whitesmoke; */
   background: url(../components/images/background.jpg);
@@ -63,6 +67,20 @@ select {
 
 /* ------------- table ------------- */
 
+.chartandlist {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* min-height: 100vh; */
+}
+
+.chart {
+  color: white;
+  min-width: 300px;
+  background: rgb(22, 2, 109);
+  margin-left: 20px;
+}
+
 td {
   padding: 0 10px;
 }
@@ -107,6 +125,8 @@ td {
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
   text-transform: uppercase;
   letter-spacing: 0.3ch;
+  background-color: #32ccbc;
+  font-weight: bold;
 }
 
 .element {

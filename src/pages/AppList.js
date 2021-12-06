@@ -2,7 +2,6 @@ import "./AppList.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DropDown from "../components/DropDown";
-import Footer from "../components/Footer";
 
 function AppList() {
   const [data, setData] = useState(false);

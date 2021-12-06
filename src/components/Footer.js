@@ -8,6 +8,7 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/guillem-novallas-7960a252/"
             target="_blank"
+            rel="noreferrer"
           >
             LinkedIn
           </a>
@@ -17,6 +18,7 @@ const Footer = () => {
           <a
             href="https://6171bd93cdf6be00079fd4bd--frosty-hodgkin-cdca33.netlify.app/"
             target="_blank"
+            rel="noreferrer"
           >
             Portfolio
           </a>

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import List from "./List";
 
 const DropDown = ({ data }) => {
-  const [currency, setCurrency] = useState("EUR");
+  const [baseCurrency, setBaseCurrency] = useState("EUR");
 
   const handleChange = (e) => {
-    setCurrency(e.target.value);
+    setBaseCurrency(e.target.value);
   };
 
   return (
@@ -19,7 +19,7 @@ const DropDown = ({ data }) => {
             <option key={keyName}>{keyName}</option>
           ))}
       </select>
-      <List currency={currency} />
+      <List baseCurrency={baseCurrency} />
     </div>
   );
 };
