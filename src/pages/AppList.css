@@ -47,6 +47,23 @@ a {
   font-weight: bold;
 }
 
+/* ------------- droplist ------------- */
+
+select {
+  margin-bottom: 16px;
+}
+
+/* ------------- table ------------- */
+
+.chartandlist {
+  margin: 0 auto;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: row;
+}
+
 table {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
@@ -59,26 +76,9 @@ table {
   background-color: grey;
 }
 
-/* ------------- droplist ------------- */
-
-select {
-  margin-bottom: 16px;
-}
-
-/* ------------- table ------------- */
-
-.chartandlist {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* min-height: 100vh; */
-}
-
 .chart {
-  color: white;
-  min-width: 300px;
-  background: rgb(22, 2, 109);
   margin-left: 20px;
+  justify-content: center;
 }
 
 td {
