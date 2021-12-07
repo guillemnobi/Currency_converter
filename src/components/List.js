@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Chart from "./Chart";
+import Chart from "chart.js/auto";
 
 const List = ({ baseCurrency }) => {
   const [list, setList] = useState(false);
