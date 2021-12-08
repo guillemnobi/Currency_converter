@@ -4,7 +4,7 @@ import axios from "axios";
 const Pair = ({ data }) => {
   const [list, setList] = useState(false);
   const [date, setDate] = useState("");
-  const [ammount, setAmmount] = useState(1);
+  const [ammount, setAmmount] = useState(null);
   const [conversion, setConversion] = useState(false);
   const [currencyA, setCurrencyA] = useState(false);
   const [currencyB, setCurrencyB] = useState(false);
@@ -32,9 +32,6 @@ const Pair = ({ data }) => {
     setCurrencyB(e.target.value);
   };
 
-  // console.log(date, list);
-  // console.log(Object.values(Object.values(list)[3]));
-
   return (
     <div data-aos="fade-right" data-aos-duration="3000">
       <div className="card1">
@@ -61,32 +58,24 @@ const Pair = ({ data }) => {
             </select>
           </div>
           <div className="element">
-            <form>
-              <label>Select Ammount</label>
-              <br />
-              <input
-                type="text"
-                placeholder="Ammount"
-                onInput={(e) => {
-                  setAmmount(e.target.value);
-                }}
-              />
-            </form>
-            <button
-              onClick={() => {
-                getRate(currencyA, currencyB, ammount);
+            <label>Select Ammount</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Ammount"
+              onInput={(e) => {
+                setAmmount(e.target.value);
+                getRate(currencyA, currencyB, e.target.value);
               }}
-            >
-              Convert
-            </button>
+            />
           </div>
         </div>
-        {list && conversion && (
+        {list && conversion && ammount && (
           <div className="card2">
             <div className="pair">
               {ammount} {currencyA} = {conversion} {currencyB}
             </div>
-            <div class="mini">Updated at * {date}</div>
+            <div class="card3">* Updated at {date}</div>
           </div>
         )}
       </div>

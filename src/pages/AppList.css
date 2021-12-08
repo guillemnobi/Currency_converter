@@ -74,6 +74,7 @@ table {
 }
 .tableList:hover {
   background-color: grey;
+  cursor: pointer;
 }
 
 .chart {
@@ -112,16 +113,20 @@ td {
   text-align: center;
 }
 
-.card2 {
-  background-color: cadetblue;
+.card3 {
   font-weight: bold;
+  font-size: 10px;
+  text-align: right;
+  justify-content: right;
+  margin-top: 2px;
+  width: 30%;
 }
 
 .pair {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 3px solid #333333;
+  border: 0.5px solid #333333;
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
   text-transform: uppercase;
   letter-spacing: 0.3ch;
@@ -130,20 +135,7 @@ td {
 }
 
 .element {
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.mini {
-  font-size: 10px;
-  text-align: right;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding: 10px 10px;
 }
 
 footer {
