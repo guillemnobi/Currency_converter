@@ -4,6 +4,8 @@ import axios from "axios";
 import Chart from "chart.js/auto";
 import Charty from "./Charty";
 
+let chart;
+
 const List = ({ baseCurrency }) => {
   const [list, setList] = useState(false);
   const [date, setDate] = useState("");
@@ -21,8 +23,6 @@ const List = ({ baseCurrency }) => {
 
       .catch((error) => console.log(error));
   }, [baseCurrency]);
-
-  let chart;
 
   const buildChart = (labels, data, label) => {
     // const chartRef = document.getElementById('chart-canvas').getContext("2d");
@@ -106,7 +106,6 @@ const List = ({ baseCurrency }) => {
         </div>
         {currencyB !== null && <Charty />}
       </div>
-      <button onClick={handleDestroy}>Destroy</button>
     </>
   );
 };
