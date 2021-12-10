@@ -19,7 +19,7 @@ const Navbar = () => {
         <h2 data-aos="fade-right" data-aos-duration="3000">
           One Conversion to rule the world
         </h2>
-        <h3>Special use of HashRouter</h3>
+        <h4>Special use of HashRouter</h4>
         <HashRouter>
           <nav>
             <Link to="/">Home</Link>

@@ -21,13 +21,16 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 1vh;
 }
 
 .nav h2 {
   color: rgba(64, 226, 191, 0.986);
-  margin-top: 3vh;
+  margin: 3vh 3vh 0 3vh;
+
   text-transform: uppercase;
   font-size: 27px;
+  text-align: center;
 }
 
 a {
@@ -47,39 +50,56 @@ a {
   font-weight: bold;
 }
 
-/* ------------- droplist ------------- */
-
 select {
   margin-bottom: 16px;
+  width: 5vh;
+  height: 2vh;
+}
+
+@media (max-width: 769px) {
+  h4 {
+    display: none;
+  }
+  .nav h2 {
+    margin: 2vh;
+  }
 }
 
 /* ------------- table ------------- */
 
 .chartandlist {
   margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+
   /* display: grid;
   grid-template-columns: 1fr 2fr; */
   /* min-height: 100vh; */
-  display: flex;
-  flex-direction: row;
 }
 
-table {
+.table {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   font-size: 16px;
+  margin-right: 1vh;
   padding: 20px;
-  min-width: 300px;
   border-radius: 2%;
 }
+
 .tableList:hover {
   background-color: grey;
   cursor: pointer;
 }
 
 .chart {
-  margin-left: 20px;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.705);
+  height: 40%;
+  border-radius: 2%;
+}
+
+.chart:hover {
+  background-color: white;
 }
 
 td {
@@ -89,6 +109,33 @@ td {
 .tableHeader {
   color: rgb(163, 219, 236);
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .chartandlist {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .table {
+    margin-bottom: 1vh;
+    align-items: center;
+  }
+}
+
+@media (max-width: 655px) {
+  .chart {
+    width: 555px;
+  }
+}
+@media (max-width: 580px) {
+  .chart {
+    width: 500px;
+  }
+}
+@media (max-width: 510px) {
+  .chart {
+    width: 400px;
+  }
 }
 
 /* ------------- after table ------------- */
@@ -156,8 +203,23 @@ footer a {
   font-size: 20px;
   font-weight: bold;
   margin-left: 1vh;
+  margin-right: 3vh;
 }
 
 footer p {
   color: white;
+}
+
+@media (max-width: 769px) {
+  footer div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3vh;
+  }
+  footer a {
+    font-size: 10px;
+  }
+  footer h3 {
+    margin-left: 3vh;
+  }
 }
