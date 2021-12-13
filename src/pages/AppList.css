@@ -1,7 +1,23 @@
 /* ------------- general ------------- */
 
+* {
+  font-family: "Roboto";
+}
+
+.intro {
+  position: absolute;
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(15deg, #00a9f1, #cf00f1);
+  z-index: -1;
+  top: 0;
+  margin-bottom: 100px;
+}
+
 h3 {
   font-weight: 500;
+  font-size: 25px;
+  color: whitesmoke;
 }
 
 .general {
@@ -10,10 +26,6 @@ h3 {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-}
-
-.cuerpo {
-  min-height: 500px;
 }
 
 .nav {
@@ -25,17 +37,37 @@ h3 {
 }
 
 .nav h2 {
-  color: rgba(64, 226, 191, 0.986);
-  margin: 3vh 3vh 0 3vh;
-
+  font-family: Roboto, sans-serif;
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 80px;
+  margin: 0;
+  padding: 30px;
   text-transform: uppercase;
-  font-size: 27px;
-  text-align: center;
+  width: 70%;
+}
+
+@media (max-width: 769px) {
+  .nav h2 {
+    font-size: 30px;
+  }
 }
 
 a {
-  font-size: 15px;
-  margin-left: 10px;
+  font-size: 30px;
+  margin-left: 30px;
+  transition: all 0.1s ease;
+}
+@media (max-width: 769px) {
+  a {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+}
+
+a:hover {
+  color: rgb(184, 41, 108);
+  font-weight: 700;
 }
 
 .exchange {
@@ -70,7 +102,8 @@ select {
 .chartandlist {
   margin: 0 auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  transition: all 0.1s ease;
 
   /* display: grid;
   grid-template-columns: 1fr 2fr; */
@@ -179,10 +212,17 @@ td {
   letter-spacing: 0.3ch;
   background-color: #32ccbc;
   font-weight: bold;
+  flex-wrap: wrap;
 }
 
 .element {
   padding: 10px 10px;
+}
+
+@media (max-width: 600px) {
+  .element {
+    padding: 3px 3px;
+  }
 }
 
 footer {
@@ -217,7 +257,11 @@ footer p {
     margin-left: 3vh;
   }
   footer a {
-    font-size: 10px;
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 13px;
   }
   footer h3 {
     margin-left: 3vh;
